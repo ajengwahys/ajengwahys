@@ -2,7 +2,36 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" id="viewport-meta" content="width=1280">
+<script>
+  // Paksa layout mobile tetap sama seperti desktop: browser akan
+  // menganggap lebar layar = 1280px lalu men-scale (memperkecil)
+  // seluruh halaman (teks, gambar, jarak) secara proporsional agar
+  // pas di layar HP, TANPA mengubah susunan/layout elemen.
+  (function () {
+    var DESKTOP_WIDTH = 1280; // samakan dengan lebar desain desktop
+    function setViewport() {
+      var meta = document.getElementById('viewport-meta');
+      if (!meta) return;
+      var scale = window.innerWidth / DESKTOP_WIDTH;
+      if (window.innerWidth >= DESKTOP_WIDTH) {
+        // Di layar besar (laptop/desktop), tampilkan apa adanya
+        meta.setAttribute('content', 'width=device-width, initial-scale=1.0');
+      } else {
+        // Di layar kecil (HP/tablet sempit), kunci lebar viewport
+        // ke ukuran desktop lalu biarkan browser men-scale ke bawah
+        meta.setAttribute(
+          'content',
+          'width=' + DESKTOP_WIDTH + ', initial-scale=' + scale +
+          ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no'
+        );
+      }
+    }
+    setViewport();
+    window.addEventListener('resize', setViewport);
+    window.addEventListener('orientationchange', setViewport);
+  })();
+</script>
 <title>Ajengwahys</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
