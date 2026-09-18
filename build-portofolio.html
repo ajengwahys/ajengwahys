@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Course Build Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container Mobile */
+        .mobile-frame {
+            width: 100%;
+            max-width: 390px;
+            height: 844px; /* Proporsi standar mobile */
+            max-height: 90vh;
+            background-color: #F8F7F4;
+            border-radius: 40px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        /* Potongan efek "Tiket" */
+        .ticket-cutout {
+            mask-image: radial-gradient(circle 20px at 50% 0, transparent 20px, black 21px);
+            -webkit-mask-image: radial-gradient(circle 20px at 50% 0, transparent 20px, black 21px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 0px; }
+
+        /* Smooth hover effect */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Menghilangkan panah bawaan untuk QnA Accordion */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="mobile-frame">
+
+    <div class="relative pt-6 px-5 pb-0 bg-[#F8F7F4] z-0">
+        
+        <div class="ticket-cutout relative mt-4 h-[250px] w-full rounded-[28px] shadow-xl overflow-hidden bg-gray-200">
+            <img src="https://www.image2url.com/r2/default/gifs/1789700715613-ffc1e708-4f75-4c89-a91a-bf21e8e9f429.gif" alt="Main Banner" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative -mt-12 bg-white rounded-[32px] p-6 text-center shadow-[0_-10px_40px_rgba(0,0,0,0.08)] mx-1 z-10">
+            <p class="text-[10px] font-bold tracking-widest text-gray-800 uppercase mb-4">Let's</p>
+            <h2 class="text-2xl font-bold text-black mb-3">BUILD PORTOFOLIO</h2>
+            <p class="text-[11px] text-gray-500 leading-relaxed mb-6 px-2 font-medium">Buat "Dummy Project" yang terlihat nyata! Persiapkan portofolio Anda dan raih klien pertama tanpa memerlukan pengalaman sebelumnya.</p>
+            
+            <img src="https://www.image2url.com/r2/default/gifs/1789700507678-f1d87d2e-7334-426d-8a94-567f33cc128b.gif" alt="Auth Image Placeholder" class="w-full aspect-[2/1] object-cover rounded-[16px] shadow-sm bg-gray-100">
+            
+        </div>
+    </div>
+
+    <div class="bg-white px-5 py-8">
+        
+        <div class="mb-4">
+            <p class="text-[10px] font-bold text-gray-500 mb-1">FILE #02: CASE STUDIES</p>
+            <h2 class="text-xl font-bold leading-tight text-gray-800 uppercase">DUMMY PROJECT,<br><span class="text-[#88B04B]">YANG TERLIHAT NYATA.</span></h2>
+        </div>
+
+        <div class="bg-[#F2F3F5] rounded-[24px] p-5 flex flex-col w-full shadow-sm hover-lift mb-5">
+            <div>
+                <h3 class="text-[#1A1D20] text-[15px] font-bold leading-[1.2] mb-2 tracking-tight">E-Course Build Portofolio</h3>
+                <p class="text-[#727477] text-[10.5px] leading-[1.5]">
+                    Panduan praktis mengerjakan studi kasus Data Entry & Research sebagai bahan portofolio andalan Anda.
+                </p>
+            </div>
+            
+            <div class="flex items-center gap-3 mt-4 cursor-pointer w-max">
+                <span class="text-[11px] font-semibold text-[#1A1D20]">Read More</span>
+                <div class="w-[26px] h-[26px] bg-[#C6E563] rounded-full flex items-center justify-center transition hover:scale-105">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-2.5">
+            <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] border border-gray-100 hover-lift">
+                <h4 class="text-[11px] font-bold text-gray-800 mb-0.5">Layanan yang Ditawarkan ke Klien</h4>
+                <p class="text-[9.5px] text-gray-500 leading-relaxed">Fast Typing, Excel / GSheets, Data Research, Ecommerce Listing, dan Data Validation.</p>
+            </div>
+            <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] border border-gray-100 hover-lift">
+                <h4 class="text-[11px] font-bold text-gray-800 mb-0.5">Project 1: Data Conversion</h4>
+                <p class="text-[9.5px] text-gray-500 leading-relaxed"><strong>Misi:</strong> Mengonversi dokumen PDF (Supplier, Produk) menjadi format Excel yang terstruktur dan siap guna.<br><strong>Tools:</strong> Rumus TRIM(), Data Validation.</p>
+            </div>
+            <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] border border-gray-100 hover-lift">
+                <h4 class="text-[11px] font-bold text-gray-800 mb-0.5">Project 2: Restaurant Research</h4>
+                <p class="text-[9.5px] text-gray-500 leading-relaxed"><strong>Misi:</strong> Mengumpulkan data lebih dari 100 restoran (Menu, Harga, Lokasi) melalui Maps atau Yelp.<br><strong>Output:</strong> Database Leads yang akurat.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-[#F5F8F2] px-5 pt-6 pb-2 border-t border-gray-200/50">
+        
+        <div class="bg-white rounded-[24px] p-5 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover-lift">
+            <div class="bg-[#DFEDD1] text-[#3A5229] text-[10px] font-bold px-3.5 py-2 rounded-[10px] inline-block mb-5 uppercase tracking-wide">
+                INFORMASI PENTING
+            </div>
+            
+            <div class="space-y-3">
+                
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50" open>
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">SYSTEM MESSAGE</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-600 mt-2 leading-[1.5] border-t border-gray-200 pt-2 space-y-1">
+                        <p>Portofolio ini merupakan satu bagian dari strategi komprehensif Remote Work. Untuk panduan lengkap dari A hingga Z, silakan pelajari Ebook <strong>"Becoming a Remote Worker"</strong>.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Apa Saja yang Anda Dapatkan?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-600 mt-2 leading-[1.5] border-t border-gray-200 pt-2 space-y-1">
+                        <p class="flex items-center gap-1.5"><span class="text-[#88B04B] font-bold">✓</span> File Latihan Studi Kasus (PDF, Excel)</p>
+                        <p class="flex items-center gap-1.5"><span class="text-[#88B04B] font-bold">✓</span> Video Panduan Pengerjaan Dummy Project</p>
+                    </div>
+                </details>
+
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Dapatkan Paket Lengkap (All in One)</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-500 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        E-course ini termasuk dalam paket lengkap <strong>Beyond the WBook</strong>. Dengan membeli paket Beyond the WBook, Anda akan otomatis mendapatkan produk ini beserta seluruh panduan pendukung lainnya.
+                    </div>
+                </details>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bg-white px-5 pt-8 pb-28 rounded-b-[40px]">
+        
+        <div class="text-center mb-6">
+            <div class="inline-flex items-center gap-1.5 border border-gray-200 px-3 py-1 rounded-full mb-3 shadow-sm">
+                <div class="w-1.5 h-1.5 bg-black rounded-full"></div>
+                <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-gray-800">Testimonial</span>
+            </div>
+            <h2 class="text-[22px] font-bold text-gray-900 tracking-tight">What They're Saying</h2>
+        </div>
+
+        <div class="flex items-start gap-3 w-full">
+            
+            <div class="flex flex-col gap-3 w-1/2">
+                <div class="relative w-full h-44 rounded-[16px] overflow-hidden group cursor-pointer shadow-sm hover-lift">
+                    <img src="https://www.image2url.com/r2/default/images/1789529061311-94f8f901-2fae-4a43-8a72-1c640d9be003.png" class="w-full h-full object-cover" alt="Video Review">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 w-7 h-7 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5"></div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 right-3">
+                        <h4 class="text-white text-[10px] font-semibold leading-tight">Ajengwahys</h4>
+                    </div>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#DBEAFE] text-[#1D4ED8] flex items-center justify-center text-[10px] font-bold">
+                            DP
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Dika Pratama</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">gila sih, kirain kyk ecourse lain yg cuma dpt teori doang, eh taunya lgsg praktek bikin dummy project resto. ngebantu bgt anjir buat apply di upwork! thx bgt</p>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#D1FAE5] text-[#047857] flex items-center justify-center text-[10px] font-bold">
+                            SA
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Sania Aurel</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">baru ngeh trnyata bikin porto data entry ga seribet itu klu tau cara nya wkwk. part rapiin pdf ke excel pake rumus TRIM mencerahkan bgtt mnrutku yg msh pemula.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3 w-1/2">
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#FEF3C7] text-[#B45309] flex items-center justify-center text-[10px] font-bold">
+                            KJ
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Kevin Julian</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">porto yg ku bikin dri ecourse ini dilirik sm klien US dongg, lgsg dpt panggilan intvrview 😭 dummy projectnya emg se real & se pro itu sii. mantep pokonya!!</p>
+                </div>
+
+                <div class="relative w-full h-44 rounded-[16px] overflow-hidden group cursor-pointer shadow-sm hover-lift">
+                    <img src="https://www.image2url.com/r2/default/gifs/1789531528681-9545dec3-aee2-42e8-9da7-83dbda68e1a9.gif" class="w-full h-full object-cover" alt="Video Review">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 w-7 h-7 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5"></div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 right-3">
+                        <h4 class="text-white text-[10px] font-semibold leading-tight">Real Testimonial</h4>
+                    </div>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#FCE7F3] text-[#BE185D] flex items-center justify-center text-[10px] font-bold">
+                            RW
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Rismawati</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">ngebantu parahh buat yg 0 exp kyk aku. dlu tuh bingung bgt mw nulis apa di porto, eh skrg udh punya 2 project kece dr sini. worth it bgt sm harganya yg murce parah 👍</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="sticky bottom-0 left-0 w-full bg-white/60 backdrop-blur-lg border-t border-gray-200/50 py-3 px-5 flex justify-between items-center z-50">
+        <div class="flex flex-col">
+            <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Total Price</span>
+            <span class="text-[18px] font-extrabold text-gray-900 leading-none">Rp 45.000</span>
+        </div>
+        <a href="http://lynk.id/ajengwahys/lnkm8y8dp036/checkout" class="bg-[#40916c] hover:bg-[#2d6a4f] text-white px-5 py-2.5 rounded-[12px] font-bold text-[12px] shadow-[0_8px_15px_rgba(64,145,108,0.3)] transition-all hover-lift active:scale-95 flex items-center gap-2">
+            Checkout
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

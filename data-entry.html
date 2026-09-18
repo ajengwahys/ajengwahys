@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Course Data Entry Remote Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container Mobile */
+        .mobile-frame {
+            width: 100%;
+            max-width: 390px;
+            height: 844px; /* Proporsi standar mobile */
+            max-height: 90vh;
+            background-color: #F8F7F4;
+            border-radius: 40px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        /* Potongan efek "Tiket" */
+        .ticket-cutout {
+            mask-image: radial-gradient(circle 20px at 50% 0, transparent 20px, black 21px);
+            -webkit-mask-image: radial-gradient(circle 20px at 50% 0, transparent 20px, black 21px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 0px; }
+
+        /* Smooth hover effect */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Menghilangkan panah bawaan untuk QnA Accordion */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="mobile-frame">
+
+    <div class="relative pt-6 px-5 pb-0 bg-[#F8F7F4] z-0">
+        
+        <div class="ticket-cutout relative mt-4 h-[250px] w-full rounded-[28px] shadow-xl overflow-hidden bg-gray-200">
+            <img src="https://www.image2url.com/r2/default/gifs/1789549225437-2b0d5fb7-5f55-400a-8b78-a926ab688160.gif" alt="Main Banner" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative -mt-12 bg-white rounded-[32px] p-6 text-center shadow-[0_-10px_40px_rgba(0,0,0,0.08)] mx-1 z-10">
+            <p class="text-[10px] font-bold tracking-widest text-gray-800 uppercase mb-4">ECOURSE DATA ENTRY</p>
+            <h2 class="text-2xl font-bold text-black mb-3">DATA ENTRY REMOTE WORK</h2>
+            <p class="text-[11px] text-gray-500 leading-relaxed mb-6 px-2 font-medium">Pintu masuk paling logis buat kamu yang mau mulai kerja remote. Dapatkan akses Materi + Rekaman Webinar lengkap!</p>
+            
+            <img src="https://www.image2url.com/r2/default/gifs/1789379328695-e9dead0d-ac2e-4382-877a-9fb893fc7a77.gif" alt="Auth Image Placeholder" class="w-full aspect-[2/1] object-cover rounded-[16px] shadow-sm bg-gray-100">
+            
+        </div>
+    </div>
+
+    <div class="bg-white px-5 py-8">
+        
+        <div class="mb-4">
+            <p class="text-[10px] font-bold text-gray-500 mb-1">PROGRAM CURRICULUM</p>
+            <h2 class="text-xl font-bold leading-tight text-gray-800 uppercase">MATERI & REKAMAN,<br><span class="text-[#88B04B]">SIAP KAMU PELAJARI.</span></h2>
+        </div>
+
+        <div class="bg-[#F2F3F5] rounded-[24px] p-4 flex gap-4 w-full shadow-sm hover-lift mb-5">
+            
+            <div class="w-[55%] flex flex-col justify-between">
+                <div>
+                    <h3 class="text-[#1A1D20] text-[15px] font-bold leading-[1.2] mb-2 tracking-tight">E-Course<br>Data Entry</h3>
+                    <p class="text-[#727477] text-[9.5px] leading-[1.4] pr-1">
+                        Panduan praktis berupa modul materi dan rekaman webinar eksklusif untuk memulai karir remote sebagai Data Entry.
+                    </p>
+                </div>
+                
+                <div class="flex items-center gap-3 mt-4 cursor-pointer">
+                    <span class="text-[11px] font-semibold text-[#1A1D20]">Read More</span>
+                    <div class="w-[26px] h-[26px] bg-[#C6E563] rounded-full flex items-center justify-center transition hover:scale-105">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-[45%] flex flex-col gap-2 justify-center">
+                <img src="https://www.image2url.com/r2/default/gifs/1789697946223-c7d0ec03-6f2d-4876-99f2-05361336c60e.gif" class="h-[65px] w-full object-cover rounded-[12px] shadow-sm" alt="Industrial Roll 1">
+                <img src="https://www.image2url.com/r2/default/gifs/1789698005839-47358592-08af-491e-8af5-d638691330a3.gif" class="h-[65px] w-full object-cover rounded-[12px] shadow-sm" alt="Industrial Roll 2">
+            </div>
+
+        </div>
+
+        <div class="space-y-2.5">
+            <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] border border-gray-100 hover-lift">
+                <h4 class="text-[11px] font-bold text-gray-800 mb-0.5">1. Fundamental & Mindset</h4>
+                <p class="text-[9.5px] text-gray-500 leading-relaxed">Data Entry itu ngapain aja? Gimana sistem kerja remote?</p>
+            </div>
+            <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] border border-gray-100 hover-lift">
+                <h4 class="text-[11px] font-bold text-gray-800 mb-0.5">2. Skillset Dasar</h4>
+                <p class="text-[9.5px] text-gray-500 leading-relaxed">Skill wajib yang harus kamu punya sebelum melamar.</p>
+            </div>
+            <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] border border-gray-100 hover-lift">
+                <h4 class="text-[11px] font-bold text-gray-800 mb-0.5">3. Portofolio & Melamar</h4>
+                <p class="text-[9.5px] text-gray-500 leading-relaxed">Cara bikin portofolio simpel & strategi melamar biar dilirik.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-[#F5F8F2] px-5 pt-6 pb-2 border-t border-gray-200/50">
+        
+        <div class="bg-white rounded-[24px] p-5 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover-lift">
+            <div class="bg-[#DFEDD1] text-[#3A5229] text-[10px] font-bold px-3.5 py-2 rounded-[10px] inline-block mb-5 uppercase tracking-wide">
+                INFO PENTING & OPSIONAL
+            </div>
+            
+            <div class="space-y-3">
+                
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50" open>
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Apa Aja yang Didapat dari E-Course Ini?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-600 mt-2 leading-[1.5] border-t border-gray-200 pt-2 space-y-1">
+                        <p class="flex items-center gap-1.5"><span class="text-[#88B04B] font-bold">✓</span> Akses Materi Lengkap Data Entry</p>
+                        <p class="flex items-center gap-1.5"><span class="text-[#88B04B] font-bold">✓</span> Rekaman Webinar Eksklusif</p>
+                    </div>
+                </details>
+
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Butuh Panduan Lebih Lengkap & Karir Luas?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-600 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        <p>Produk ini adalah <strong>subset</strong> dari ebook utama. Jika kamu merasa butuh panduan yang lebih lengkap & opsi karir yang lebih luas, silakan cek Ebook <strong>"Becoming a Remote Worker"</strong>.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Mau Dapet Paket Lengkap (All in One)?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-500 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        E-course ini juga merupakan bagian dari paket lengkap <strong>Beyond the WBook</strong>. Kalau kamu beli paket Beyond the WBook, kamu <strong>otomatis dapet produk ini juga</strong>. So, better sih langsung beli yang full yaitu paket Beyond the WBook!
+                    </div>
+                </details>
+
+            </div>
+
+            </div>
+
+    </div>
+
+    <div class="bg-white px-5 pt-8 pb-28 rounded-b-[40px]">
+        
+        <div class="text-center mb-6">
+            <div class="inline-flex items-center gap-1.5 border border-gray-200 px-3 py-1 rounded-full mb-3 shadow-sm">
+                <div class="w-1.5 h-1.5 bg-black rounded-full"></div>
+                <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-gray-800">Testimonial</span>
+            </div>
+            <h2 class="text-[22px] font-bold text-gray-900 tracking-tight">What They're Saying</h2>
+        </div>
+
+        <div class="flex items-start gap-3 w-full">
+            
+            <div class="flex flex-col gap-3 w-1/2">
+                <div class="relative w-full h-44 rounded-[16px] overflow-hidden group cursor-pointer shadow-sm hover-lift">
+                    <img src="https://www.image2url.com/r2/default/images/1789529061311-94f8f901-2fae-4a43-8a72-1c640d9be003.png" class="w-full h-full object-cover" alt="Video Review">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 w-7 h-7 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5"></div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 right-3">
+                        <h4 class="text-white text-[10px] font-semibold leading-tight">Ajengwahys</h4>
+                    </div>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#DBEAFE] text-[#1D4ED8] flex items-center justify-center text-[10px] font-bold">
+                            AH
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Alika Hakim</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Investasi 45rb paling worth it! Rekaman webinarnya jelas banget dan modulnya ngebantu aku bikin portofolio simpel pertama buat Data Entry.</p>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#D1FAE5] text-[#047857] flex items-center justify-center text-[10px] font-bold">
+                            AJ
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Anisa Jayanti</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Penjelasan fundamental & skillset dasarnya langsung ke poin utama. Bikin pemula kayak aku gak bingung lagi mau mulai kerja remote dari mana.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3 w-1/2">
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#FEF3C7] text-[#B45309] flex items-center justify-center text-[10px] font-bold">
+                            DL
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Dinda Larasati</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Pintu masuk paling pas banget buat yang mau belajar Data Entry. Dapet materi plus rekaman webinar yang gampang diikuti!</p>
+                </div>
+
+                <div class="relative w-full h-44 rounded-[16px] overflow-hidden group cursor-pointer shadow-sm hover-lift">
+                    <img src="https://www.image2url.com/r2/default/gifs/1789531528681-9545dec3-aee2-42e8-9da7-83dbda68e1a9.gif" class="w-full h-full object-cover" alt="Video Review">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 w-7 h-7 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5"></div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 right-3">
+                        <h4 class="text-white text-[10px] font-semibold leading-tight">Real Testimonial</h4>
+                    </div>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#FCE7F3] text-[#BE185D] flex items-center justify-center text-[10px] font-bold">
+                            SM
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Sarah Maulida</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Materi Data Entry-nya ringkas dan aplikatif. Trik bikin portofolio & strategi melamarnya beneran ngebantu banget biar dilirik!</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="sticky bottom-0 left-0 w-full bg-white/60 backdrop-blur-lg border-t border-gray-200/50 py-3 px-5 flex justify-between items-center z-50">
+        <div class="flex flex-col">
+            <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Total Price</span>
+            <span class="text-[18px] font-extrabold text-gray-900 leading-none">Rp 45.000</span>
+        </div>
+        <a href="http://lynk.id/ajengwahys/ovqn82kv6vd7/checkout" class="bg-[#40916c] hover:bg-[#2d6a4f] text-white px-5 py-2.5 rounded-[12px] font-bold text-[12px] shadow-[0_8px_15px_rgba(64,145,108,0.3)] transition-all hover-lift active:scale-95 flex items-center gap-2">
+            Checkout
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

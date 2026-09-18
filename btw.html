@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond The Wbook</title>
+    <!-- Menggunakan Tailwind CSS untuk presisi UI/UX -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan font Poppins untuk estetika modern & minimalis -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #E5E5E5;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Container Mobile */
+        .mobile-frame {
+            width: 100%;
+            max-width: 390px;
+            height: 844px; /* Proporsi standar mobile */
+            max-height: 90vh;
+            background-color: #F8F7F4;
+            border-radius: 40px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        /* Potongan efek "Tiket" */
+        .ticket-cutout {
+            mask-image: radial-gradient(circle 20px at 50% 0, transparent 20px, black 21px);
+            -webkit-mask-image: radial-gradient(circle 20px at 50% 0, transparent 20px, black 21px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 0px; }
+
+        /* Smooth hover effect */
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Menghilangkan panah bawaan untuk QnA Accordion */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body>
+
+<div class="mobile-frame">
+
+    <!-- =========================================
+         SECTION 1: TRAVEL INVITE
+         ========================================= -->
+    <div class="relative pt-6 px-5 pb-0 bg-[#F8F7F4] z-0">
+        
+        <!-- BAGIAN YANG DIUBAH JADI IMAGE -->
+        <div class="ticket-cutout relative mt-4 h-[250px] w-full rounded-[28px] shadow-xl overflow-hidden bg-gray-200">
+            <img src="https://www.image2url.com/r2/default/gifs/1789524631839-669c3d83-0d64-4a94-8251-7262259f0c77.gif" alt="Main Banner" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative -mt-12 bg-white rounded-[32px] p-6 text-center shadow-[0_-10px_40px_rgba(0,0,0,0.08)] mx-1 z-10">
+            <p class="text-[10px] font-bold tracking-widest text-gray-800 uppercase mb-4">THE REMOTE WORK PACKAGE</p>
+            <h2 class="text-2xl font-bold text-black mb-3">BEYOND THE WBOOK</h2>
+            <p class="text-[11px] text-gray-500 leading-relaxed mb-6 px-2 font-medium">Semua yang kamu butuhkan untuk memahami dunia remote work, membangun skill, dan mulai melangkah ada dalam satu tempat.</p>
+            
+            <!-- Tempat untuk Image 1536x768. Class w-full dan aspect-[2/1] memastikan ukurannya presisi -->
+            <img src="https://www.image2url.com/r2/default/gifs/1789525874725-8669a3fd-97aa-4793-bd49-7a6e680ffd78.gif" alt="Auth Image Placeholder" class="w-full aspect-[2/1] object-cover rounded-[16px] shadow-sm bg-gray-100">
+            
+        </div>
+    </div>
+
+    <!-- =========================================
+         SECTION 2: PRODUCT CARD
+         ========================================= -->
+    <div class="bg-white px-5 py-8">
+        
+        <div class="mb-4">
+            <p class="text-[10px] font-bold text-gray-500 mb-1">WHAT'S INSIDE</p>
+            <h2 class="text-xl font-bold leading-tight text-gray-800 uppercase">SEMUA YANG KAMU BUTUHKAN,<br><span class="text-[#88B04B]">ADA DI SINI.</span></h2>
+        </div>
+
+        <div class="bg-[#F2F3F5] rounded-[24px] p-4 flex gap-4 w-full shadow-sm hover-lift">
+            
+            <div class="w-[55%] flex flex-col justify-between">
+                <div>
+                    <h3 class="text-[#1A1D20] text-[15px] font-bold leading-[1.2] mb-2 tracking-tight">Wbook<br>Remote Work</h3>
+                    <p class="text-[#727477] text-[9.5px] leading-[1.4] pr-1">
+                        Materi yang terus diperbarui mengikuti tools, cara kerja, dan hal-hal baru yang relevan di dunia remote work.
+                    </p>
+                </div>
+                
+                <div class="flex items-center gap-3 mt-4 cursor-pointer">
+                    <span class="text-[11px] font-semibold text-[#1A1D20]">Read More</span>
+                    <div class="w-[26px] h-[26px] bg-[#C6E563] rounded-full flex items-center justify-center transition hover:scale-105">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-[45%] flex flex-col gap-2 justify-center">
+                <img src="https://www.image2url.com/r2/default/gifs/1789526826736-900b55ad-a6c1-49a7-b2dc-c50045ffae14.gif" class="h-[65px] w-full object-cover rounded-[12px] shadow-sm" alt="Industrial Roll 1">
+                <img src="https://www.image2url.com/r2/default/gifs/1789527330818-672fee49-d2f1-4d4a-90bc-8f1044d63984.gif" class="h-[65px] w-full object-cover rounded-[12px] shadow-sm" alt="Industrial Roll 2">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- =========================================
+         SECTION 3: CONSULTATION & PROFILE (QnA UPDATED)
+         ========================================= -->
+    <div class="bg-[#F5F8F2] px-5 pt-6 pb-2 border-t border-gray-200/50">
+        
+        <div class="bg-white rounded-[24px] p-5 shadow-[0_4px_20px_rgba(0,0,0,0.03)] mb-6 hover-lift">
+            <div class="bg-[#DFEDD1] text-[#3A5229] text-[10px] font-bold px-3.5 py-2 rounded-[10px] inline-block mb-5 uppercase tracking-wide">
+                BEYOND THE QUESTIONS
+            </div>
+            
+            <!-- QnA Section Menggantikan List Lama -->
+            <div class="space-y-3 mb-5">
+                
+                <!-- QnA Item 1 -->
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Apa aja yang aku dapat di Beyond the WBook?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-500 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        Kamu dapat WBook Remote Worker yang terus diperbarui, akses komunitas, webinar rutin, mentoring, bedah CV, review portfolio, simulasi, dan rekaman beberapa ecourse yang bisa kamu pelajari sesuai kebutuhanmu.
+                    </div>
+                </details>
+
+                <!-- QnA Item 2 -->
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Aku masih pemula dan belum pernah kerja remote. Bisa ikut?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-500 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        Bisa banget. Kamu nggak harus sudah punya pengalaman remote work untuk mulai. Materinya bisa kamu pelajari dari awal, dan kalau ada yang belum kamu pahami, ada komunitas serta sesi support yang bisa kamu manfaatkan untuk bertanya.
+                    </div>
+                </details>
+
+                <!-- QnA Item 3 -->
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">aku cuma dapat WBook atau ada akses lainnya?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-500 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        Ada lebih dari WBook. Kamu juga mendapatkan akses ke komunitas, webinar rutin, mentoring, review CV & portfolio, simulasi, serta berbagai rekaman ecourse yang sudah tersedia di dalam paket.
+                    </div>
+                </details>
+
+                <!-- QnA Item 4 -->
+                <details class="group bg-[#F8F9FA] rounded-[12px] p-3 border border-gray-100 cursor-pointer transition-all hover:bg-gray-50">
+                    <summary class="flex justify-between items-center outline-none">
+                        <span class="text-[11px] text-[#4A4C4A] font-semibold pr-4 leading-[1.4]">Kalau aku punya pertanyaan, bisa tanya langsung?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 text-[#88B04B] flex-shrink-0">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+                        </span>
+                    </summary>
+                    <div class="text-[10px] text-gray-500 mt-2 leading-[1.5] border-t border-gray-200 pt-2">
+                        Bisa. Kamu punya akses ke grup chat untuk berdiskusi dan bertanya, jadi nggak harus mencari jawaban sendirian ketika ada hal yang masih bikin stuck.
+                    </div>
+                </details>
+
+            </div>
+
+        <div class="relative w-full h-[280px] rounded-[24px] overflow-hidden mb-6 shadow-sm hover-lift">
+            <img src="https://www.image2url.com/r2/default/gifs/1789528444270-21c0d2ba-8830-4e59-9c2f-ec31a33fd17a.gif" class="w-full h-full object-cover" alt="Healthy Lifestyle">
+
+                <div class="absolute -top-3 right-4 w-7 h-7 bg-[#E8F2DF] rounded-full flex items-center justify-center shadow-sm">
+                   <svg width="14" height="14" viewBox="0 0 24 24" fill="#88B04B"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- =========================================
+         SECTION 4: TESTIMONIALS 
+         ========================================= -->
+    <div class="bg-white px-5 pt-8 pb-28 rounded-b-[40px]">
+        
+        <div class="text-center mb-6">
+            <div class="inline-flex items-center gap-1.5 border border-gray-200 px-3 py-1 rounded-full mb-3 shadow-sm">
+                <div class="w-1.5 h-1.5 bg-black rounded-full"></div>
+                <span class="text-[8px] font-bold tracking-[0.2em] uppercase text-gray-800">Testimonial</span>
+            </div>
+            <h2 class="text-[22px] font-bold text-gray-900 tracking-tight">What They're Saying</h2>
+        </div>
+
+        <div class="flex items-start gap-3 w-full">
+            
+            <!-- KOLOM 1 -->
+            <div class="flex flex-col gap-3 w-1/2">
+                <!-- GAMBAR 1 TETAP DIPERTAHANKAN -->
+                <div class="relative w-full h-44 rounded-[16px] overflow-hidden group cursor-pointer shadow-sm hover-lift">
+                    <img src="https://www.image2url.com/r2/default/images/1789529061311-94f8f901-2fae-4a43-8a72-1c640d9be003.png" class="w-full h-full object-cover" alt="Video Review">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 w-7 h-7 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5"></div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 right-3">
+                        <h4 class="text-white text-[10px] font-semibold leading-tight">Ajengwahys</h4>
+                    </div>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <!-- AVATAR DIUBAH JADI TEKS MURNI -->
+                        <div class="w-7 h-7 rounded-full bg-[#DBEAFE] text-[#1D4ED8] flex items-center justify-center text-[10px] font-bold">
+                            AH
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Ayeshanilam</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Gue malah kaget ini mba ajeng di grup baek amat, segala pertanyaan semua dijawab, dijelasin step by step, dibikinin zoom meeting, bahkan sampe ada yg direview portofolio personal. In this economy gitu. bantu orang dapet kerja, semoga jadi pemberat amal kebaikan ya mbaaa</p>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <!-- AVATAR DIUBAH JADI TEKS MURNI -->
+                        <div class="w-7 h-7 rounded-full bg-[#D1FAE5] text-[#047857] flex items-center justify-center text-[10px] font-bold">
+                            AJ
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Petty Anjani</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">aku baru pertama kali ikut dan menurutku materinya sangat jelas ka, ka ajeng juga dalam menjawab bener2 mantep</p>
+                </div>
+            </div>
+
+            <!-- KOLOM 2 -->
+            <div class="flex flex-col gap-3 w-1/2">
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <!-- AVATAR DIUBAH JADI TEKS MURNI -->
+                        <div class="w-7 h-7 rounded-full bg-[#FEF3C7] text-[#B45309] flex items-center justify-center text-[10px] font-bold">
+                            DL
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Dinda A.</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Kirain cuma dapet WBook, ternyata banyak banget isinya 😭 paling sering kepake grup chat sama webinar. Bisa langsung nanya juga kalo lg bingung.</p>
+                </div>
+
+                <!-- GAMBAR 2 TETAP DIPERTAHANKAN -->
+                <div class="relative w-full h-44 rounded-[16px] overflow-hidden group cursor-pointer shadow-sm hover-lift">
+                    <img src="https://www.image2url.com/r2/default/gifs/1789531528681-9545dec3-aee2-42e8-9da7-83dbda68e1a9.gif" class="w-full h-full object-cover" alt="Video Review">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 w-7 h-7 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        <div class="w-0 h-0 border-t-[4px] border-t-transparent border-l-[6px] border-l-white border-b-[4px] border-b-transparent ml-0.5"></div>
+                    </div>
+                    <div class="absolute bottom-3 left-3 right-3">
+                        <h4 class="text-white text-[10px] font-semibold leading-tight">Real Testimonial</h4>
+                    </div>
+                </div>
+
+                <div class="bg-[#F8F9FA] p-3.5 rounded-[16px] relative shadow-sm hover-lift">
+                    <div class="text-[24px] text-gray-300 font-serif absolute top-2 right-3 leading-none">“</div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <!-- AVATAR DIUBAH JADI TEKS MURNI -->
+                        <div class="w-7 h-7 rounded-full bg-[#FCE7F3] text-[#BE185D] flex items-center justify-center text-[10px] font-bold">
+                            SM
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold text-gray-900 leading-tight">Rui Remote Worker</p>
+                            <p class="text-[8px] text-gray-500">member</p>
+                        </div>
+                    </div>
+                    <p class="text-[9px] text-gray-600 leading-[1.5]">Suka bgt sama konsepnya. Jadi kalau lagi bingung soal remote work tinggal buka materi atau tanya di grup. Nggak berasa belajar sendirian.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- =========================================
+         SECTION 5: STICKY CHECKOUT CTA (UPDATED)
+         ========================================= -->
+    <!-- Bezel diperkecil, lebih transparan (bg-white/60), shadow disesuaikan warna hijau baru -->
+    <div class="sticky bottom-0 left-0 w-full bg-white/60 backdrop-blur-lg border-t border-gray-200/50 py-3 px-5 flex justify-between items-center z-50">
+        <div class="flex flex-col">
+            <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider mb-0.5">Total Price</span>
+            <span class="text-[18px] font-extrabold text-gray-900 leading-none">Rp 199.000</span>
+        </div>
+        <!-- Diubah menjadi tag <a> untuk link, warna diubah ke #40916c, ukuran dipangkas sedikit -->
+        <a href="http://lynk.id/ajengwahys/3vndxok5q8gz/checkout" class="bg-[#40916c] hover:bg-[#2d6a4f] text-white px-5 py-2.5 rounded-[12px] font-bold text-[12px] shadow-[0_8px_15px_rgba(64,145,108,0.3)] transition-all hover-lift active:scale-95 flex items-center gap-2">
+            Checkout
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
